@@ -15,8 +15,9 @@ option(BUILD_MEMSAVE "Use memory-saving mode. Might influence performance negati
 option(BUILD_TEST "Build Google Tests for mapMAP modules." ON)
 option(BUILD_DEMO "Build a demo, reading SHIMF datasets into mapMAP." ON)
 
-set(TBB_INCLUDE_DIRS "/usr/include" CACHE PATH "Path to where the TBB include files (tbb/) reside")
-set(TBB_LIBRARY "/usr/lib" CACHE PATH "Path to where the TBB library files (libtbb.so etc.) reside")
+FIND_PACKAGE(TBB REQUIRED)
+#set(TBB_INCLUDE_DIRS "/usr/include" CACHE PATH "Path to where the TBB include files (tbb/) reside")
+#set(TBB_LIBRARY "/usr/lib" CACHE PATH "Path to where the TBB library files (libtbb.so etc.) reside")
 
 # default to Release build and C++11 mode
 set(CMAKE_CXX_STANDARD 11)
