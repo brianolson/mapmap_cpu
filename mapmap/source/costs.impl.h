@@ -9,14 +9,14 @@
 
 #include <iostream>
 
-#include <tbb/parallel_for.h>
-#include <tbb/blocked_range.h>
+#include <oneapi/tbb/parallel_for.h>
+#include <oneapi/tbb/blocked_range.h>
 
-#include "header/costs.h"
+#include <mapmap/header/costs.h>
 
-#include "header/defines.h"
-#include "header/vector_types.h"
-#include "header/vector_math.h"
+#include <mapmap/header/defines.h>
+#include <mapmap/header/vector_types.h>
+#include <mapmap/header/vector_math.h>
 
 NS_MAPMAP_BEGIN
 
